@@ -1,0 +1,7 @@
+{
+  "/api/analytics/revenue-chart/route": "app/api/analytics/revenue-chart/route.js",
+  "/api/analytics/summary/route": "app/api/analytics/summary/route.js",
+  "/dashboard/ai-query/page": "app/dashboard/ai-query/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/page": "app/page.js"
+}

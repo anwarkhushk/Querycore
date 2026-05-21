@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///media/rauf/Data/education/BSCS/semester-04/DB-lab/project/Querycore/app/api/analytics/summary/route.ts"],"sourcesContent":["import { NextResponse } from 'next/server';\n\nexport async function GET() {\n    // Mock data\n    return NextResponse.json({\n        totalRevenue: 54230,\n        totalCustomers: 1240,\n        ordersThisMonth: 345,\n        growth: {\n            revenue: 12,\n            customers: 8,\n            orders: 24\n        }\n    });\n}\n"],"names":[],"mappings":";;;;AAAA;;AAEO,eAAe;IAClB,YAAY;IACZ,OAAO,gJAAY,CAAC,IAAI,CAAC;QACrB,cAAc;QACd,gBAAgB;QAChB,iBAAiB;QACjB,QAAQ;YACJ,SAAS;YACT,WAAW;YACX,QAAQ;QACZ;IACJ;AACJ"}}]
+}
