@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /home/anwar/querrycore/QueryCore/backend/venv
+set -gx VIRTUAL_ENV /media/rauf/Data/education/BSCS/semester-04/DB-lab/project/Querycore/backend/venv
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH

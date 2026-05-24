@@ -39,10 +39,10 @@ deactivate nondestructive
 if [ "${OSTYPE:-}" = "cygwin" ] || [ "${OSTYPE:-}" = "msys" ] ; then
     # transform D:\path\to\venv to /d/path/to/venv on MSYS
     # and to /cygdrive/d/path/to/venv on Cygwin
-    export VIRTUAL_ENV=$(cygpath /home/anwar/querrycore/QueryCore/backend/venv)
+    export VIRTUAL_ENV=$(cygpath /media/rauf/Data/education/BSCS/semester-04/DB-lab/project/Querycore/backend/venv)
 else
     # use the path as-is
-    export VIRTUAL_ENV=/home/anwar/querrycore/QueryCore/backend/venv
+    export VIRTUAL_ENV=/media/rauf/Data/education/BSCS/semester-04/DB-lab/project/Querycore/backend/venv
 fi
 
 _OLD_VIRTUAL_PATH="$PATH"

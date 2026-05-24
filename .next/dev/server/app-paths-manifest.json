@@ -1,7 +1,12 @@
 {
   "/api/analytics/revenue-chart/route": "app/api/analytics/revenue-chart/route.js",
   "/api/analytics/summary/route": "app/api/analytics/summary/route.js",
+  "/api/customers/route": "app/api/customers/route.js",
+  "/api/orders/route": "app/api/orders/route.js",
+  "/api/products/route": "app/api/products/route.js",
   "/dashboard/ai-query/page": "app/dashboard/ai-query/page.js",
+  "/dashboard/customers/page": "app/dashboard/customers/page.js",
+  "/dashboard/orders/page": "app/dashboard/orders/page.js",
   "/dashboard/page": "app/dashboard/page.js",
   "/page": "app/page.js"
 }
