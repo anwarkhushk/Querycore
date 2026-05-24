@@ -118,7 +118,11 @@ async function GET(request) {
         }
         sql += ' ORDER BY created_at DESC';
         const { rows } = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$postgres$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["query"])(sql, params);
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json(rows);
+        const formattedCustomers = rows.map((row)=>({
+                ...row,
+                spend: parseFloat(row.spend)
+            }));
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json(formattedCustomers);
     } catch (error) {
         console.error('Database error:', error);
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
@@ -141,7 +145,11 @@ async function POST(request) {
             name,
             email
         ]);
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json(rows[0], {
+        const newCustomer = {
+            ...rows[0],
+            spend: parseFloat(rows[0].spend)
+        };
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json(newCustomer, {
             status: 201
         });
     } catch (error) {

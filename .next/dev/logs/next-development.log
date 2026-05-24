@@ -1,1 +1,135 @@
-[00:00:00.721] Server  LOG     ✓ Ready in 544ms
+[00:00:00.581] Server  LOG     ✓ Ready in 429ms
+[00:00:04.053] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.254] Server  LOG     executed query {}
+[00:00:04.256] Server  LOG     executed query {}
+[00:00:04.257] Server  LOG     executed query {}
+[00:00:04.265] Server  LOG     executed query {}
+[00:00:04.266] Server  LOG     executed query {}
+[00:00:04.266] Server  LOG     executed query {}
+[00:00:04.274] Server  LOG     executed query {}
+[00:00:04.275] Server  LOG     executed query {}
+[00:00:04.275] Server  LOG     executed query {}
+[00:00:04.305] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:00:04.305] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:00:40.401] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:52.243] Server  LOG     executed query {}
+[00:01:52.244] Server  LOG     executed query {}
+[00:01:52.245] Server  LOG     executed query {}
+[00:01:52.258] Server  LOG     executed query {}
+[00:01:52.259] Server  LOG     executed query {}
+[00:01:52.259] Server  LOG     executed query {}
+[00:01:52.331] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:01:52.331] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:01:56.115] Server  LOG     executed query {}
+[00:01:56.118] Server  LOG     executed query {}
+[00:01:56.122] Server  LOG     executed query {}
+[00:01:56.153] Server  LOG     executed query {}
+[00:01:56.156] Server  LOG     executed query {}
+[00:01:56.159] Server  LOG     executed query {}
+[00:01:57.410] Server  LOG     executed query {}
+[00:01:57.419] Server  LOG     executed query {}
+[00:01:57.527] Browser ERROR   uncaughtError: TypeError: product.price.toFixed is not a function
+[00:02:25.034] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:25.118] Server  LOG     executed query {}
+[00:02:25.119] Server  LOG     executed query {}
+[00:02:25.119] Server  LOG     executed query {}
+[00:02:25.126] Server  LOG     executed query {}
+[00:02:25.126] Server  LOG     executed query {}
+[00:02:25.127] Server  LOG     executed query {}
+[00:02:25.135] Server  LOG     executed query {}
+[00:02:25.135] Server  LOG     executed query {}
+[00:02:25.135] Server  LOG     executed query {}
+[00:02:25.213] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:02:25.213] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:02:26.703] Server  LOG     executed query {}
+[00:02:26.711] Server  LOG     executed query {}
+[00:02:45.740] Server  LOG     executed query {}
+[00:02:45.761] Server  LOG     executed query {}
+[00:02:46.121] Browser ERROR   Failed to log backup {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"/api","data":"{\"entityType\":\"Customer\",\"action\":\"Added\",\"entityName\":\"anwar\",\"dataBefore\":null,\"dataAfter\":{\"name\":\"anwar\",\"email\":\"kushk@gmail.com\",\"status\":\"Active\"}}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer mock-jwt-token-xyz-123","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/backup","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:1940:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2458:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3264:49)\n    at async logBackup (http://localhost:3000/_next/static/chunks/_5627e7d0._.js:43:9)","status":404}
+[00:02:51.210] Server  LOG     executed query {}
+[00:02:51.228] Server  LOG     executed query {}
+[00:02:51.238] Server  LOG     executed query {}
+[00:02:51.240] Server  LOG     executed query {}
+[00:02:51.251] Server  LOG     executed query {}
+[00:02:51.252] Server  LOG     executed query {}
+[00:03:09.322] Server  LOG     executed query {}
+[00:03:09.449] Browser ERROR   Failed to log backup {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"/api","data":"{\"entityType\":\"Order\",\"action\":\"Added\",\"entityName\":\"Order for anwar\",\"dataBefore\":null,\"dataAfter\":{\"customerName\":\"anwar\",\"total\":592,\"items\":[{\"productName\":\"Premium Analytics Plan\",\"quantity\":4,\"price\":\"99.00\"},{\"productName\":\"Standard Analytics Plan\",\"quantity\":4,\"price\":\"49.00\"}]}}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer mock-jwt-token-xyz-123","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/backup","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:1940:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2458:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3264:49)\n    at async logBackup (http://localhost:3000/_next/static/chunks/_5627e7d0._.js:43:9)","status":404}
+[00:03:14.468] Server  LOG     executed query {}
+[00:03:14.481] Server  LOG     executed query {}
+[00:03:14.482] Server  LOG     executed query {}
+[00:03:14.489] Server  LOG     executed query {}
+[00:03:14.490] Server  LOG     executed query {}
+[00:03:14.490] Server  LOG     executed query {}
+[00:03:14.574] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:03:14.574] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:03:16.892] Server  LOG     executed query {}
+[00:03:16.901] Server  LOG     executed query {}
+[00:03:16.904] Server  LOG     executed query {}
+[00:03:16.913] Server  LOG     executed query {}
+[00:03:16.918] Server  LOG     executed query {}
+[00:03:16.919] Server  LOG     executed query {}
+[00:05:24.305] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:24.428] Server  LOG     executed query {}
+[00:05:24.433] Server  LOG     executed query {}
+[00:05:24.435] Server  LOG     executed query {}
+[00:05:24.446] Server  LOG     executed query {}
+[00:05:24.447] Server  LOG     executed query {}
+[00:05:24.449] Server  LOG     executed query {}
+[00:05:24.459] Server  LOG     executed query {}
+[00:05:24.460] Server  LOG     executed query {}
+[00:05:24.462] Server  LOG     executed query {}
+[00:05:26.001] Server  LOG     executed query {}
+[00:05:26.012] Server  LOG     executed query {}
+[00:05:26.115] Browser ERROR   uncaughtError: TypeError: product.price.toFixed is not a function
+[00:06:47.104] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:47.183] Server  LOG     executed query {}
+[00:06:47.193] Server  LOG     executed query {}
+[00:06:47.201] Server  LOG     executed query {}
+[00:07:06.720] Server  LOG     executed query {}
+[00:07:06.732] Server  LOG     executed query {}
+[00:07:07.742] Server  LOG     executed query {}
+[00:07:07.777] Server  LOG     executed query {}
+[00:07:07.777] Server  LOG     executed query {}
+[00:07:07.785] Server  LOG     executed query {}
+[00:07:07.785] Server  LOG     executed query {}
+[00:07:07.785] Server  LOG     executed query {}
+[00:07:07.867] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:07:07.867] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:07:08.695] Server  LOG     executed query {}
+[00:07:08.704] Server  LOG     executed query {}
+[00:07:08.708] Server  LOG     executed query {}
+[00:07:08.710] Server  LOG     executed query {}
+[00:07:08.718] Server  LOG     executed query {}
+[00:07:08.720] Server  LOG     executed query {}
+[00:07:09.559] Server  LOG     executed query {}
+[00:07:09.569] Server  LOG     executed query {}

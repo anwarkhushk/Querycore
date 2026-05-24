@@ -17,7 +17,13 @@ export async function GET(request: Request) {
         sql += ' ORDER BY created_at DESC';
 
         const { rows } = await query(sql, params);
-        return NextResponse.json(rows);
+        
+        const formattedProducts = rows.map(row => ({
+            ...row,
+            price: parseFloat(row.price)
+        }));
+
+        return NextResponse.json(formattedProducts);
     } catch (error) {
         console.error('Database error:', error);
         return NextResponse.json({ error: 'Failed to fetch products' }, { status: 500 });
@@ -36,7 +42,12 @@ export async function POST(request: Request) {
         `;
         const { rows } = await query(sql, [sku, name, parseFloat(price), parseInt(stock)]);
         
-        return NextResponse.json(rows[0], { status: 201 });
+        const newProduct = {
+            ...rows[0],
+            price: parseFloat(rows[0].price)
+        };
+        
+        return NextResponse.json(newProduct, { status: 201 });
     } catch (error: any) {
         console.error('Database error:', error);
         if (error.code === '23505') { // unique violation

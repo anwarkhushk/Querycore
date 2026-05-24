@@ -22,7 +22,12 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
             return NextResponse.json({ message: 'Customer not found' }, { status: 404 });
         }
 
-        return NextResponse.json(rows[0]);
+        const updatedCustomer = {
+            ...rows[0],
+            spend: parseFloat(rows[0].spend)
+        };
+
+        return NextResponse.json(updatedCustomer);
     } catch (error) {
         console.error('Database error:', error);
         return NextResponse.json({ error: 'Failed to update customer' }, { status: 500 });

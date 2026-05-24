@@ -17,7 +17,13 @@ export async function GET(request: Request) {
         sql += ' ORDER BY created_at DESC';
 
         const { rows } = await query(sql, params);
-        return NextResponse.json(rows);
+        
+        const formattedCustomers = rows.map(row => ({
+            ...row,
+            spend: parseFloat(row.spend)
+        }));
+
+        return NextResponse.json(formattedCustomers);
     } catch (error) {
         console.error('Database error:', error);
         return NextResponse.json({ error: 'Failed to fetch customers' }, { status: 500 });
@@ -36,7 +42,12 @@ export async function POST(request: Request) {
         `;
         const { rows } = await query(sql, [name, email]);
         
-        return NextResponse.json(rows[0], { status: 201 });
+        const newCustomer = {
+            ...rows[0],
+            spend: parseFloat(rows[0].spend)
+        };
+        
+        return NextResponse.json(newCustomer, { status: 201 });
     } catch (error: any) {
         console.error('Database error:', error);
         if (error.code === '23505') { // unique violation

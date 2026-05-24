@@ -118,7 +118,11 @@ async function GET(request) {
         }
         sql += ' ORDER BY created_at DESC';
         const { rows } = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$postgres$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["query"])(sql, params);
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json(rows);
+        const formattedProducts = rows.map((row)=>({
+                ...row,
+                price: parseFloat(row.price)
+            }));
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json(formattedProducts);
     } catch (error) {
         console.error('Database error:', error);
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
@@ -143,7 +147,11 @@ async function POST(request) {
             parseFloat(price),
             parseInt(stock)
         ]);
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json(rows[0], {
+        const newProduct = {
+            ...rows[0],
+            price: parseFloat(rows[0].price)
+        };
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json(newProduct, {
             status: 201
         });
     } catch (error) {

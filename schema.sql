@@ -2,7 +2,6 @@
 CREATE TYPE customer_status AS ENUM ('Active', 'Inactive');
 CREATE TYPE order_status AS ENUM ('Completed', 'Processing', 'Pending', 'Cancelled');
 
--- Create Customers table
 CREATE TABLE IF NOT EXISTS customers (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     name VARCHAR(255) NOT NULL,
@@ -12,7 +11,6 @@ CREATE TABLE IF NOT EXISTS customers (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Create Products table
 CREATE TABLE IF NOT EXISTS products (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     sku VARCHAR(100) UNIQUE NOT NULL,
@@ -22,7 +20,6 @@ CREATE TABLE IF NOT EXISTS products (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Create Orders table
 CREATE TABLE IF NOT EXISTS orders (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     customer_name VARCHAR(255) NOT NULL,
@@ -32,7 +29,6 @@ CREATE TABLE IF NOT EXISTS orders (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Create Order Items table
 CREATE TABLE IF NOT EXISTS order_items (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     order_id UUID REFERENCES orders(id) ON DELETE CASCADE,

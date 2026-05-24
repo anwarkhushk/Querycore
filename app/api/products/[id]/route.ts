@@ -26,7 +26,12 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
             return NextResponse.json({ message: 'Product not found' }, { status: 404 });
         }
 
-        return NextResponse.json(rows[0]);
+        const updatedProduct = {
+            ...rows[0],
+            price: parseFloat(rows[0].price)
+        };
+
+        return NextResponse.json(updatedProduct);
     } catch (error) {
         console.error('Database error:', error);
         return NextResponse.json({ error: 'Failed to update product' }, { status: 500 });
