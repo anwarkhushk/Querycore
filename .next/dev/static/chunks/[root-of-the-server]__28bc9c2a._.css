@@ -799,6 +799,10 @@
     display: inline-flex;
   }
 
+  .table {
+    display: table;
+  }
+
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
